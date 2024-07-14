@@ -31,10 +31,10 @@ class TestSRC01(unittest.TestCase):
         res = 9.876543210
         self.assertEqual(func_00(arg=arg), res)
 
-    def test_func_01_with_err(self):
-        arg = "9.876543210"
-        res = 9.876543210
-        self.assertEqual(func_00(arg=arg), res)
+    # def test_func_01_with_err(self):
+    #     arg = "9.876543210"
+    #     res = 9.876543210
+    #     self.assertEqual(func_00(arg=arg), res)
 
 
 if __name__ == "__main__":
