@@ -1,12 +1,9 @@
-import os
-import sys
 import unittest
 
-sys.path.append(os.path.join(os.path.dirname(__file__), "..", "src"))
-from class_00 import Class00
+from src.class_00 import Class00
 
 
-class TestSRC01(unittest.TestCase):
+class TestClass00(unittest.TestCase):
     def setUp(self):
         self.config = {
             'a': 0.123456789

@@ -1,8 +1,4 @@
-import os
-import sys
-
-sys.path.append(os.path.join(os.path.dirname(__file__), "..", "..", "01_test", "src"))
-from func_00 import func_00
+from .func_00 import func_00
 
 
 class Class00:
