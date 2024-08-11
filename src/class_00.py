@@ -1,4 +1,4 @@
-from .func_00 import func_00
+from src.func_00 import func_00
 
 
 class Class00:

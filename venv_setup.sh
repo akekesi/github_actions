@@ -42,4 +42,4 @@ fi
 echo 
 echo "Command to activate or deactivate '$venv':"
 echo "Activation:   . $venv/Scripts/activate"
-echo "Deactivation: . $venv/Scripts/activate"
+echo "Deactivation: deactivate"
