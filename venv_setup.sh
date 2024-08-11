@@ -31,6 +31,7 @@ else
 fi
 
 # pip install
+python -m pip install --upgrade pip > /dev/null
 pip install -r $requirements > /dev/null
 
 # deactivate venv
