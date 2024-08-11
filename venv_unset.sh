@@ -1,6 +1,6 @@
 #!/bin/bash
 
-venv_name=.venv_github_actions
+venv_name=.venv_sample_project
 
 # deactivate venv
 if [[ ! -z $VIRTUAL_ENV ]]; then
