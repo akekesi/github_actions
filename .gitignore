@@ -1,2 +1,9 @@
+# Bytecode
 __pycache__/
+
+# Environments
 .venv*
+
+# Coverage
+htmlcov/
+.coverage

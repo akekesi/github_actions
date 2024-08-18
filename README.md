@@ -30,4 +30,8 @@ $ python -m src.class_00
 $ python -m test.test_func_00
 $ python -m test.test_class_00
 $ python -m unittest discover test
+$ python -m coverage run -m unittest discover test
+$ python -m coverage report
+$ python -m coverage html
 ```
+Then open htmlcov/index.html in your browser, to see a report.

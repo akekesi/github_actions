@@ -9,7 +9,7 @@ def func_00(arg: Optional[float] = None):
     return 0.123
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": # pragma: no cover
     res = func_00()
     print(f"{res = }")
 

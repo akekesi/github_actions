@@ -1,3 +1,4 @@
+import coverage
 import unittest
 
 from src.class_00 import Class00
@@ -25,5 +26,16 @@ class TestClass00(unittest.TestCase):
         self.assertEqual(class_00.b, res_b)
 
 
-if __name__ == "__main__":
-    unittest.main()
+if __name__ == "__main__": # pragma: no cover
+    cov = coverage.Coverage()
+    cov.start()
+
+    try:
+        unittest.main()
+    except:  # catch-all except clause
+        pass
+
+    cov.stop()
+    cov.save()
+
+    cov.html_report()
