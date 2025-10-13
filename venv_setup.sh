@@ -2,7 +2,7 @@
 
 # variables
 venv=.venv_sample_project
-python_required="Python 3.12.0"
+python_required="Python 3.13.0"
 python_current=$(python --version 2>&1)
 requirements=requirements.txt
 
