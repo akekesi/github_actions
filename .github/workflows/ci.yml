@@ -46,5 +46,5 @@ jobs:
     - name: Upload coverage report
       uses: actions/upload-artifact@v4
       with:
-        name: coverage-html
+        name: coverage-html-${{ matrix.os }}-py${{ matrix.python-version }}
         path: htmlcov/
