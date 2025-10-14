@@ -3,7 +3,7 @@ import numpy as np # only to test pip install
 from typing import Optional
 
 
-def func_00(arg: Optional[float] = None):
+def func_00(arg: Optional[float] = None) -> float:
     if arg is not None:
         return arg
     return 0.123
