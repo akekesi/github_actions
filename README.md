@@ -34,4 +34,9 @@ $ python -m coverage run -m unittest discover test
 $ python -m coverage report
 $ python -m coverage html
 ```
+
+## Run tests with coverage using the script
+```
+$. run_unittest_coverage.sh
+```
 Then open htmlcov/index.html in your browser, to see a report.

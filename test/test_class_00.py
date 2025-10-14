@@ -1,4 +1,3 @@
-import coverage
 import unittest
 
 # Try importing Class00 safely
@@ -42,15 +41,8 @@ class TestClass00(unittest.TestCase):
 
 
 if __name__ == "__main__": # pragma: no cover
-    cov = coverage.Coverage()
-    cov.start()
 
     try:
         unittest.main()
     except Exception as e:
         print(f"Error running tests: {e}")
-
-    cov.stop()
-    cov.save()
-
-    cov.html_report()

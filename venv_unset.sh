@@ -9,3 +9,7 @@ fi
 
 # delete venv
 rm -rf $venv_name
+
+# delete coverage files
+rm -rf htmlcov
+rm -rf .coverage
