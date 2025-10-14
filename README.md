@@ -10,7 +10,7 @@ Sample project for:
 
 ## Setup
 - Shell Scripts
-    - [Installation of Python 3.12.0](https://www.python.org/downloads/release/python-3120/)
+    - [Installation of Python 3.13.0](https://www.python.org/downloads/release/python-3130/)
     - Set up virtual environment and install packages:
 
         ```$. venv_setup.sh```
@@ -18,7 +18,7 @@ Sample project for:
 
         ```$. venv_unset.sh```
 - Manually
-    - [Installation Python 3.12.0](https://www.python.org/downloads/release/python-3120/)
+    - [Installation Python 3.13.0](https://www.python.org/downloads/release/python-3130/)
     - Installation of packages
 
         ```pip install -r requirements.txt```

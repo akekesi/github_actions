@@ -24,6 +24,7 @@ class TestClass00(unittest.TestCase):
         self.assertTrue(callable(Class00), "Class00 is not callable (not a class)")
 
     def test_class_00_class(self):
+        """Test the initialization of Class00."""
         class_00 = Class00(config=self.config)
         res_a = 0.123456789
         res_b = 0.0
@@ -31,6 +32,7 @@ class TestClass00(unittest.TestCase):
         self.assertEqual(class_00.b, res_b)
 
     def test_class_00_func(self):
+        """Test the func_00 method of Class00."""
         class_00 = Class00(config=self.config)
         class_00.func_00()
         res_a = 0.123456789
@@ -45,8 +47,8 @@ if __name__ == "__main__": # pragma: no cover
 
     try:
         unittest.main()
-    except:  # catch-all except clause
-        pass
+    except Exception as e:
+        print(f"Error running tests: {e}")
 
     cov.stop()
     cov.save()

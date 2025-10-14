@@ -37,15 +37,18 @@ class TestFunc00(unittest.TestCase):
         self.assertEqual(sig.return_annotation, float)
 
     def test_func_00_without_arg(self):
+        """Test func_00 without any arguments."""
         res = 0.123
         self.assertEqual(func_00(), res)
 
     def test_func_00_with_none(self):
+        """Test func_00 with None as argument."""
         arg = None
         res = 0.123
         self.assertEqual(func_00(arg=arg), res)
 
     def test_func_00_with_null(self):
+        """Test func_00 with 0 and 0.0 as arguments."""
         arg = 0
         res = 0
         self.assertEqual(func_00(arg=arg), res)
@@ -55,6 +58,7 @@ class TestFunc00(unittest.TestCase):
         self.assertEqual(func_00(arg=arg), res)
 
     def test_func_00_with_arg(self):
+        """Test func_00 with a float argument."""
         arg = 9.876543210
         res = 9.876543210
         self.assertEqual(func_00(arg=arg), res)
@@ -71,8 +75,8 @@ if __name__ == "__main__": # pragma: no cover
 
     try:
         unittest.main()
-    except:  # catch-all except clause
-        pass
+    except Exception as e:
+        print(f"Error running tests: {e}")
 
     cov.stop()
     cov.save()
